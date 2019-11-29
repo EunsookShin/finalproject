@@ -275,7 +275,7 @@ String message = (String) session.getAttribute ("username");
 			
 			
 			document.querySelector("#detail"+i.toString()).onclick = function () {
-				alert(this.value);
+				window.location.href = ("Details.jsp?billid=" + this.value);
 			}
 			var xhr = new XMLHttpRequest();
 			xhr.open("GET", "FollowCheck?src=/results.jsp" +
